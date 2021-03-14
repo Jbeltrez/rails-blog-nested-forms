@@ -21,6 +21,7 @@ describe 'nested form for tag in post', :type => :feature do
       fill_in('Name', :with => "witty")
     end
     click_button('Create Post')
+    # byebug 
     expect(page).to have_content("witty")
   end
 end
